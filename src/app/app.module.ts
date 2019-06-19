@@ -7,6 +7,9 @@ import { HomeComponent } from './components/home/home.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { ProtegidaComponent } from './components/protegida/protegida.component';
 
+/* importar las rutas del archivo app.routes.ts */
+import { RUTAS_APLICACION } from "./app.routes";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,8 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
     ProtegidaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RUTAS_APLICACION
   ],
   providers: [],
   bootstrap: [AppComponent]
