@@ -11,7 +11,7 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { RUTAS_APLICACION } from "./app.routes";
 
 /* servicios de autentificacion y autorización auth0 */
-import { AuthService } from './servives/auth.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
