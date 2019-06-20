@@ -10,6 +10,9 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
 /* importar las rutas del archivo app.routes.ts */
 import { RUTAS_APLICACION } from "./app.routes";
 
+/* servicios de autentificacion y autorización auth0 */
+import { AuthService } from './servives/auth.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,7 @@ import { RUTAS_APLICACION } from "./app.routes";
     BrowserModule,
     RUTAS_APLICACION
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
